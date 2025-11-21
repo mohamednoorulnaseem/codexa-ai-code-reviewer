@@ -32,25 +32,26 @@ Built using FastAPI + Python (backend) & React + TypeScript (frontend), powered 
 
 ## 📁 Project Structure
 
+```text
 codexa-ai-code-reviewer/
 │
 ├── backend/
-│ ├── codexa_backend/
-│ │ ├── **init**.py
-│ │ ├── main.py (FastAPI endpoints + CORS)
-│ │ └── ai_reviewer.py (OpenAI request + JSON parsing)
-│ │
-│ ├── .env (ignored) OpenAI key
-│ ├── .env.example (env template)
-│ └── requirements.txt (Python dependencies)
+│   ├── codexa_backend/
+│   │   ├── __init__.py
+│   │   ├── main.py          # FastAPI API + CORS
+│   │   └── ai_reviewer.py   # OpenAI logic + JSON parsing
+│   │
+│   ├── .env                 # (ignored) contains OPENAI_API_KEY
+│   ├── .env.example         # Template env
+│   └── requirements.txt     # Dependencies
 │
 ├── frontend/
-│ ├── src/
-│ │ ├── App.tsx (UI logic + API call)
-│ │ ├── App.css (UI styling)
-│ │ └── ...
-│ ├── vite.config.ts (Frontend config)
-│ └── package.json (React dependencies)
+│   ├── src/
+│   │   ├── App.tsx          # UI + API request
+│   │   ├── App.css          # Styling
+│   │   └── ...
+│   ├── vite.config.ts       # Frontend Config
+│   └── package.json
 │
 └── README.md
 
@@ -142,3 +143,4 @@ Have an idea? Open an issue or contribute.
 ---
 
 ### ⭐ If you like Codexa, don’t forget to star the repo!
+```
